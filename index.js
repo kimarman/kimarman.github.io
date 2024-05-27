@@ -14,6 +14,4 @@ document.addEventListener("DOMContentLoaded", function() {
         const heartButton = document.getElementById(button.heart);
         const likeOutput = document.getElementById(button.likeCount);
         const hahaOutput = document.getElementById(button.hahaCount);
-        const heartOutput = document.getElementById(button.heartCount);
-
-        likeButton.addEventListener
+        const heartOutput
