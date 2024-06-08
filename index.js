@@ -18,11 +18,24 @@ document.getElementById('btnDislike2').addEventListener('click', function() {
     count.textContent = parseInt(count.textContent) + 1;
 });
 
-document.getElementById('submit').addEventListener('click', function() {
-    let comment = document.getElementById('comment').value;
+document.getElementById('submit1').addEventListener('click', function() {
+    let comment = document.getElementById('comment1').value;
     if (comment) {
-        let commentBox = document.getElementById('commentbox');
-        commentBox.value += comment + "\n";
-        document.getElementById('comment').value = '';
+        let comments = document.getElementById('comments1');
+        let newComment = document.createElement('div');
+        newComment.textContent = comment;
+        comments.appendChild(newComment);
+        document.getElementById('comment1').value = '';
+    }
+});
+
+document.getElementById('submit2').addEventListener('click', function() {
+    let comment = document.getElementById('comment2').value;
+    if (comment) {
+        let comments = document.getElementById('comments2');
+        let newComment = document.createElement('div');
+        newComment.textContent = comment;
+        comments.appendChild(newComment);
+        document.getElementById('comment2').value = '';
     }
 });
